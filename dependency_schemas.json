@@ -1,0 +1,56 @@
+{
+  "sample-service": {
+  "swagger": "2.0",
+  "basePath": "/sample-service",
+  "info": {
+    "description": "Sample Rpc Microservice",
+    "version": "0",
+    "title": "SampleService"
+  },
+  "paths": {
+    "/testApi": {
+      "post": {
+        "summary": "api for /testApi",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EmptyObject"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TestResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "EmptyObject": {
+      "type": "object"
+    },
+    "TestResponse": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "data"
+      ]
+    }
+  }
+}
+}

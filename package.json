@@ -1,0 +1,52 @@
+{
+  "name": "@uc-engg/sample-service",
+  "version": "1.0.0",
+  "main": "service/index",
+  "scripts": {
+    "start": "npx tsc && node dist/server.js",
+    "dev": "nodemon",
+    "unit": "jest --config=node_modules/scotty-library/jest-configs/jest_unit.js --collectCoverageFrom=src/service/**/*.ts --collectCoverageFrom=!src/**/*.model.ts --collectCoverageFrom=!src/service/index.ts",
+    "clean:all": "tsc --build --clean && rm -rf dist && rm -rf test_reports && rm -rf event_logs",
+    "clean:rpc": "rm -rf node_modules/openapi-rpc-node node_modules/schema-repo",
+    "build": "tsc",
+    "nodemon": "npx tsc && nodemon dist/server.js",
+    "lint": "npx tsc && eslint --ignore-path .gitignore --ignore-path .eslintignore . --ext .ts",
+    "validate-schema": "swagger-cli validate schema/service_schema.json",
+    "schema_gen": "npm explore type-swagger -- npm run ts_swagger_generator -- --src $(pwd)/schema/service_schema.d.ts --dest $(pwd)/schema/service_schema.json",
+    "circular-dependency": "madge -c --extensions js,jsx,ts,tsx ./src"
+  },
+  "author": "UrbanClap Technologies India Pvt. Ltd.",
+  "license": "MIT",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "@types/lodash": "4.14.134",
+    "@types/node": "8.10.49",
+    "@types/mongodb": "3.3.1",
+    "@types/mongoose": "5.5.17",
+    "lodash": "4.17.15",
+    "moment": "2.22.2",
+    "mongoose": "5.9.2",
+    "nodemon": "1.19.2",
+    "@uc-engg/openapi-rpc-node": "~1.0.0",
+    "request": "2.88.0",
+    "@typegoose/typegoose": "6.5.0",
+    "typescript": "3.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.18",
+    "@types/validator": "10.11.3",
+    "@typescript-eslint/parser": "2.33.0",
+    "eslint": "6.8.0",
+    "eslint-config-uc-base": "1.12.4",
+    "eslint-plugin-uc": "1.8.4",
+    "husky": "3.0.2",
+    "jest": "24.9.0",
+    "lint-staged": "9.5.0",
+    "swagger-cli": "4.0.4",
+    "ts-jest": "24.1.0",
+    "ts-node": "8.4.1",
+    "madge": "3.10.0"
+  },
+  "service_type": "typescript"
+}

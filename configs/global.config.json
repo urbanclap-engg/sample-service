@@ -1,0 +1,154 @@
+{
+    "cms-config": {
+        "type": "rpc_config",
+        "value": {
+            "GLOBAL_CREDENTIALS_FOLDER_NAME": "test_folder",
+            "GLOBAL_CREDENTIALS_PATH": "credentials.test_folder",
+            "SERVICE_CREDENTIALS_PATH": "credentials",
+            "SLACK_ALERT_CHANNEL": "#test-channel",
+            "VAULT_CONFIG": {
+                "SOURCE": "platform-config-service",
+                "VAULT_TOKEN_URL": "getVaultToken?client_id"
+            }
+        }
+    },
+    "dependency-config": {
+        "type": "rpc_config",
+        "value": {
+            "ID": {
+                "AuditContext": "AuditContext",
+                "AuditContextConstants": "AuditContextConstants",
+                "ELASTICSEARCH": {
+                    "test-elasticsearch-1": "test-elasticsearch-1",
+                    "test-elasticsearch-2": "test-elasticsearch-2"
+                },
+                "INTERNAL_SERVICE": {
+                    "test-service-1": "test-service-1",
+                    "test-service-2": "test-service-2"
+                },
+                "KAFKA": {
+                    "event_consumer": "event_consumer",
+                    "event_consumer_data": "event_consumer_data",
+                    "event_producer": "event_producer",
+                    "event_producer_data": "event_producer_data"
+                },
+                "MONGODB": {
+                    "mongo_test": "mongo_test"
+                },
+                "MYSQL": {
+                    "test-mysql-1": "test-mysql-1",
+                    "test-mysql-2": "test-mysql-2"
+                },
+                "REDSHIFT": {
+                    "test-redshift-1": "test-redshift-1",
+                    "test-redshift-2": "test-redshift-2"
+                },
+                "SNOWFLAKE": {
+                    "test-snowflake-1": "test-snowflake-1",
+                    "test-snowflake-2": "test-snowflake-2"
+                },
+                "application_metrics": "application_metrics",
+                "auth_service": "auth_service",
+                "avro_event_producer": "avro_event_producer",
+                "cache": "cache",
+                "coachmarks": "coachmarks",
+                "distributed_lock_manager": "distributed_lock_manager",
+                "event_consumer": "event_consumer",
+                "event_producer": "event_producer",
+                "feature_config_manager": "feature_config_manager",
+                "load_shed": "load_shed",
+                "localization": "localization",
+                "media_utils": "media_utils",
+                "rate_limit": "rate_limit"
+            },
+            "SLACK_ALERT_CHANNEL": "#test-channel",
+            "TYPE": {
+                "AUDIT_CONTEXT": "audit_context",
+                "AUTH_SERVICE": "auth_service",
+                "CACHE": "cache",
+                "COACHMARKS": "coachmarks",
+                "DISTRIBUTED_LOCK_MANAGER": "distributed_lock_manager",
+                "ELASTICSEARCH": "elasticsearch",
+                "EVENT_CONSUMER": "event_consumer",
+                "EVENT_PRODUCER": "event_producer",
+                "FEATURE_CONFIG_MANAGER": "feature_config_manager",
+                "LOCALIZATION": "localization",
+                "MEDIA_UTILS": "media_utils",
+                "OPTIONS": "options",
+                "RATE_LIMIT": "rate_limit",
+                "REDSHIFT": "redshift"
+            }
+        }
+    },
+    "gateway-config": {
+        "type": "rpc_config",
+        "value": {
+            "API": "api",
+            "CONFIG_PATH": "/configs/gateway.config",
+            "DASHBOARD_API": "dashboard-api",
+            "MIDDLEWARE": {
+                "AUTH_METHOD": {
+                    "CAPTCHA_AUTHENTICATION": "captcha_authentication",
+                    "CLIENT_AUTHENTICATION": "client_authentication",
+                    "CLIENT_AUTHORISATION": "client_authorisation",
+                    "GOOGLE_AUTHENTICATION": "google_authentication"
+                },
+                "CLIENT_AUTHORISATION": {
+                    "RESOURCE": {
+                        "CUSTOMER_REQUEST": "customer_request",
+                        "PROVIDER_LEAD": "provider_lead"
+                    }
+                },
+                "TYPE": {
+                    "AUTH": "auth",
+                    "LOCALISATION": "localisation",
+                    "MULTIPART": "multipart"
+                }
+            },
+            "PROVIDER_TYPES": {
+                "AGGREGATOR": "aggregator",
+                "CAPTAIN": "captain",
+                "COOWNER": "coOwner",
+                "HELPER": "helper",
+                "INDIVIDUAL": "individual",
+                "OPERATOR": "operator",
+                "OWNER": "owner",
+                "PARTNER": "partner"
+            }
+        }
+    },
+    "mycroft-push-gateway": {
+        "discovery": {
+            "port": 9091,
+            "uri": "gateway-uri.location"
+        }
+    },
+    "pcs-config": {
+        "type": "rpc_config",
+        "value": {
+            "URI": "localhost:80"
+        }
+    },
+    "sample-service": {
+        "discovery": {
+            "port": 1002,
+            "uri": "localhost"
+        },
+        "type": "service"
+    },
+    "slack-config": {
+        "type": "rpc_config",
+        "value": {
+            "API": {
+                "POST_MESSAGE": "https://slack.com/api/chat.postMessage",
+                "WEB_HOOK": "https://hooks.slack.com/services/SGDGDDF"
+            }
+        }
+    },
+    "workflow-config": {
+        "type": "rpc_config",
+        "value": {
+            "DEFAULT_ALERT_CHANNEL": "#test-alerts"
+        }
+    }
+}
