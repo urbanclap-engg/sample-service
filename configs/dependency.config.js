@@ -1,4 +1,4 @@
-const OAPI_RPC = require('openapi-rpc-node');
+const OAPI_RPC = require("@uc-engg/openapi-rpc-node");
 const DEPENDENCY = OAPI_RPC.getDependencyConfig();
 
 const Config = {
