@@ -4,8 +4,7 @@
   "main": "service/index",
   "scripts": {
     "start": "npx tsc && node dist/server.js",
-    "unit": "jest --config=node_modules/scotty-library/jest-configs/jest_unit.js --collectCoverageFrom=src/service/**/*.ts --collectCoverageFrom=!src/**/*.model.ts --collectCoverageFrom=!src/service/index.ts",
-    "clean:all": "tsc --build --clean && rm -rf dist && rm -rf test_reports && rm -rf event_logs",
+    "clean:all": "tsc --build --clean && rm -rf dist && rm -rf event_logs",
     "build": "tsc",
     "validate-schema": "swagger-cli validate schema/service_schema.json",
     "circular-dependency": "madge -c --extensions js,jsx,ts,tsx ./src"
@@ -29,14 +28,10 @@
     "typescript": "3.8.3"
   },
   "devDependencies": {
-    "@types/jest": "24.0.18",
     "@types/validator": "10.11.3",
     "@typescript-eslint/parser": "2.33.0",
-    "husky": "3.0.2",
-    "jest": "24.9.0",
     "lint-staged": "9.5.0",
     "swagger-cli": "4.0.4",
-    "ts-jest": "24.1.0",
     "ts-node": "8.4.1",
     "madge": "3.10.0"
   },
