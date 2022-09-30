@@ -47,10 +47,12 @@
                     "test-snowflake-1": "test-snowflake-1",
                     "test-snowflake-2": "test-snowflake-2"
                 },
+                "CACHE": {
+                  "cache_platform": "cache_platform"
+                },
                 "application_metrics": "application_metrics",
                 "auth_service": "auth_service",
                 "avro_event_producer": "avro_event_producer",
-                "cache": "cache",
                 "coachmarks": "coachmarks",
                 "distributed_lock_manager": "distributed_lock_manager",
                 "event_consumer": "event_consumer",
@@ -149,6 +151,13 @@
         "type": "rpc_config",
         "value": {
             "DEFAULT_ALERT_CHANNEL": "#test-alerts"
+        }
+    },
+    "profiler-config": {
+        "type": "rpc_config",
+        "value": {
+            "S3_PROFILE_BUCKET": "profiling-data",
+            "S3_PROFILE_BUCKET_URL": "sample_url"
         }
     }
 }

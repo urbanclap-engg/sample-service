@@ -11,5 +11,5 @@
     "credentialStore": "credentials_json",
     "authServiceIds": [
         "sample-service"
-      ]
+    ]
 }
