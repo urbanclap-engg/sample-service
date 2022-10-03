@@ -1,0 +1,10 @@
+info*.log
+error*.log
+node_modules
+dist
+test_reports
+junit.xml
+event_logs/
+.idea
+.DS_Store
+.vscode
