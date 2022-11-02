@@ -1,5 +1,5 @@
 'use strict';
 
-const RPCFramework = require('@uc-engg/openapi-rpc-node');
+const RPCFramework = require('@uc-engg/marc');
 
 RPCFramework.initService();

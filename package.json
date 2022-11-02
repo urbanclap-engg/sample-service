@@ -22,7 +22,7 @@
     "moment": "2.22.2",
     "mongoose": "5.9.2",
     "nodemon": "1.19.2",
-    "@uc-engg/openapi-rpc-node": "^1.9.2",
+    "@uc-engg/marc": "^1.0.0",
     "request": "2.88.0",
     "@typegoose/typegoose": "6.5.0",
     "typescript": "3.8.3"

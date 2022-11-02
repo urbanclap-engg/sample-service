@@ -1,5 +1,5 @@
 # sample-service
-Openapi-rpc-node based sample microservice
+Marc based sample microservice
 
 # How to 
 
