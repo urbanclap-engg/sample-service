@@ -159,5 +159,11 @@
             "S3_PROFILE_BUCKET": "profiling-data",
             "S3_PROFILE_BUCKET_URL": "sample_url"
         }
+    },
+    "prometheus-service": {
+        "discovery": {
+            "port": 9090,
+            "uri": "SampleUrl"
+        }
     }
 }
