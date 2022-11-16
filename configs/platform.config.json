@@ -1,10 +1,7 @@
 {
     "serviceDependencySchema": {
         "properties": {
-            "generatedSchemaFilePath": "dependency_schemas.json",
-            "gitGroupName": "myGroupName",
-            "gitToken": "gitToken",
-            "gitUri": "https://my.gitlab.location.com/"
+            "generatedSchemaFilePath": "dependency_schemas.json"
         },
         "type": "custom"
     },
